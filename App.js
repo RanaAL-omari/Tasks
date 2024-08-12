@@ -1,13 +1,38 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+//import Task16 from './Tasks/Task16.js';
+//import Task17 from './Tasks/Task17.js';
+//import Task18 from './Tasks/Task18.js';
+//import Task19 from './Tasks/Task19.js';
+//import Task20 from './Tasks/Task20.js';
+//import Task21 from './Tasks/Task21.js';
+//import Task22 from './Tasks/Task22.js';
+//import Task23 from './Tasks/Task23.js';
+//import Task24 from './Tasks/Task24.js';
+//import Task25 from './Tasks/Task25.js';
+import Task26 from './Tasks/Task26.js';
 
-const App = () => {
+
+
+export default function App  () {
   return (
-    <View>
-      <Text>Hello, World!</Text>
-    </View>
+         //<Task16></Task16>
+        // <Task17></Task17>
+       //<Task18></Task18>
+      //<Task19></Task19>
+     // <Task20></Task20>
+    // <Task21></Task21>
+   //<Task22></Task22>
+  // <Task23></Task23>
+ // <Task24></Task24>
+ //<Task25></Task25>
+ <Task26></Task26>
+
+    
   );
 };
+//export default App;
 
-export default App;  
+
+
 
