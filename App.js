@@ -10,7 +10,11 @@ import { View } from 'react-native';
 //import Task23 from './Tasks/Task23.js';
 //import Task24 from './Tasks/Task24.js';
 //import Task25 from './Tasks/Task25.js';
-import Task26 from './Tasks/Task26.js';
+//import Task26 from './Tasks/Task26.js';
+//import Task27 from './Tasks/Task27.js';
+//import Task28 from './Tasks/Task28.js';
+//import Task29 from './Tasks/Task29.js';
+import Task30 from './Tasks/Task30.js';
 
 
 
@@ -26,7 +30,14 @@ export default function App  () {
   // <Task23></Task23>
  // <Task24></Task24>
  //<Task25></Task25>
- <Task26></Task26>
+//<Task26></Task26>
+//<Task27></Task27>
+//<Task28></Task28>
+//<Task29></Task29>
+<Task30></Task30>
+
+
+
 
     
   );
