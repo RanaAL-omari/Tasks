@@ -16,7 +16,7 @@ const images = [
 Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10
 ];
 
-const Task28 = () => {
+const Task29 = () => {
 
     const flatListRef = useRef(null); 
 
@@ -88,4 +88,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Task28;
+export default Task29;
