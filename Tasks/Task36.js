@@ -3,7 +3,7 @@ import { ScrollView, Text, StyleSheet } from 'react-native';
 
 function generateRandomWord(length) {
   let result = '';
-  const characters = 'abcdefghijklmnopqrstuvwxyz';
+  const characters = 'qwertyuiopplkjjhgkfdsmmansnsn';
   for (let i = 0; i < length; i++) {
     result += characters.charAt(Math.floor(Math.random() * characters.length));
   }

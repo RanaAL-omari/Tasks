@@ -14,8 +14,15 @@ import { View } from 'react-native';
 //import Task27 from './Tasks/Task27.js';
 //import Task28 from './Tasks/Task28.js';
 //import Task29 from './Tasks/Task29.js';
-import Task30 from './Tasks/Task30.js';
-
+// import Task30 from './Tasks/Task30.js';
+  //  import Task31 from './Tasks/Task31.js';
+//     import Task32 from './Tasks/Task32.js';
+//import Task33 from './Tasks/Task33.js';
+//  import Task34 from './Tasks/Task34.js';
+//  import Task35 from './Tasks/Task35.js';
+//import Task36 from './Tasks/Task36.js';
+//import Task37 from './Tasks/Task37.js';
+import Task38 from './Tasks/Task38.js';
 
 
 export default function App  () {
@@ -24,17 +31,27 @@ export default function App  () {
         // <Task17></Task17>
        //<Task18></Task18>
       //<Task19></Task19>
-     // <Task20></Task20>
-    // <Task21></Task21>
-   //<Task22></Task22>
-  // <Task23></Task23>
- // <Task24></Task24>
- //<Task25></Task25>
-//<Task26></Task26>
-//<Task27></Task27>
-//<Task28></Task28>
-//<Task29></Task29>
-<Task30></Task30>
+            // <Task20></Task20>
+           // <Task21></Task21>
+          //<Task22></Task22>
+         // <Task23></Task23>
+        // <Task24></Task24>
+       //<Task25></Task25>
+      //<Task26></Task26>
+     //<Task27></Task27>
+//    <Task28></Task28>
+//   <Task29></Task29>
+  //<Task30></Task30>
+  //  <Task31></Task31>
+//   <Task32></Task32>
+//<Task33></Task33>
+//<Task34></Task34>
+//<Task35></Task35>
+
+//<Task36></Task36>
+//<Task37></Task37>
+<Task38></Task38>
+
 
 
 
@@ -42,7 +59,6 @@ export default function App  () {
     
   );
 };
-//export default App;
 
 
 
