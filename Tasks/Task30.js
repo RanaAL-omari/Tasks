@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import Img1 from '../Resource/Img.1.png';
 import Img2 from '../Resource/Img.2.png';
-import Img3 from '../Resource/Img.3.png';
+import Img3 from '../Resource/Img.3.png'; 
 import Img4 from '../Resource/Img.4.png';
 import Img5 from '../Resource/Img.5.png';
 import Img6 from '../Resource/Img.6.png';
