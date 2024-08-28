@@ -1,58 +1,34 @@
 import React from 'react';
-import { Text, View, StyleSheet, Button } from 'react-native';
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import { Text, View, StyleSheet, Button, ImageBackground } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-function Screen1() {
-  const navigation = useNavigation();
+import Img1 from '../Resource/Img.1.png';
+import Img2 from '../Resource/Img2.png';
+import Img3 from '../Resource/Img3.png';
+import Img4 from '../Resource/Img4.png';
+
+const backgroundImages = {
+  Screen1: Img1,
+  Screen2: Img2,
+  Screen3: Img3,
+  Screen4: Img4,
+};
+
+function Screen({ route, navigation }) {
+  const { screenName } = route.params;
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Screen 1</Text>
-      <Button title="Go to Screen 2" onPress={() => navigation.navigate('Screen2')} />
-      <Button title="Go to Screen 3" onPress={() => navigation.navigate('Screen3')} />
-      <Button title="Go to Screen 4" onPress={() => navigation.navigate('Screen4')} />
-    </View>
-  );
-}
-
-function Screen2() {
-  const navigation = useNavigation();
-
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Screen 2</Text>
-      <Button title="Go to Screen 1" onPress={() => navigation.navigate('Screen1')} />
-      <Button title="Go to Screen 3" onPress={() => navigation.navigate('Screen3')} />
-      <Button title="Go to Screen 4" onPress={() => navigation.navigate('Screen4')} />
-    </View>
-  );
-}
-
-function Screen3() {
-  const navigation = useNavigation();
-
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Screen 3</Text>
-      <Button title="Go to Screen 1" onPress={() => navigation.navigate('Screen1')} />
-      <Button title="Go to Screen 2" onPress={() => navigation.navigate('Screen2')} />
-      <Button title="Go to Screen 4" onPress={() => navigation.navigate('Screen4')} />
-    </View>
-  );
-}
-
-function Screen4() {
-  const navigation = useNavigation();
-
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Screen 4</Text>
-      <Button title="Go to Screen 1" onPress={() => navigation.navigate('Screen1')} />
-      <Button title="Go to Screen 2" onPress={() => navigation.navigate('Screen2')} />
-      <Button title="Go to Screen 3" onPress={() => navigation.navigate('Screen3')} />
-    </View>
+    <ImageBackground source={backgroundImages[screenName]} style={styles.background}>
+      <View style={styles.container}>
+        <Text style={styles.text}>{screenName}</Text>
+        <Button title="Go to Screen 1" onPress={() => navigation.navigate('Screen1')} />
+        <Button title="Go to Screen 2" onPress={() => navigation.navigate('Screen2')} />
+        <Button title="Go to Screen 3" onPress={() => navigation.navigate('Screen3')} />
+        <Button title="Go to Screen 4" onPress={() => navigation.navigate('Screen4')} />
+      </View>
+    </ImageBackground>
   );
 }
 
@@ -73,7 +49,7 @@ export default function Task42() {
                 iconName = 'home';
                 break;
               case 'Screen2':
-                iconName = 'search';
+                iconName = 'magnify';
                 break;
               case 'Screen3':
                 iconName = 'heart';
@@ -86,26 +62,33 @@ export default function Task42() {
           },
         })}
       >
-        <Tab.Screen name="Screen1" component={Screen1} />
-        <Tab.Screen name="Screen2" component={Screen2} />
-        <Tab.Screen name="Screen3" component={Screen3} />
-        <Tab.Screen name="Screen4" component={Screen4} />
+        <Tab.Screen name="Screen1" component={Screen} initialParams={{ screenName: 'Screen1' }} />
+        <Tab.Screen name="Screen2" component={Screen} initialParams={{ screenName: 'Screen2' }} />
+        <Tab.Screen name="Screen3" component={Screen} initialParams={{ screenName: 'Screen3' }} />
+        <Tab.Screen name="Screen4" component={Screen} initialParams={{ screenName: 'Screen4' }} />
       </Tab.Navigator>
     </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
+  background: {
+    flex: 1,
+    width: '100%',
+    height: '100%',
+    resizeMode: 'cover',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ECF0F1',
   },
   text: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#2C3E50',
+    color: '#FFF',
     marginBottom: 20,
   },
 });
