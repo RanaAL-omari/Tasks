@@ -7,7 +7,8 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Img1 from '../Resource/Img.1.png';
 import Img2 from '../Resource/Img2.png';
 import Img3 from '../Resource/Img3.png';
-import Img4 from '../Resource/Img4.png';
+import Img4 from '../Resource/Img4.png';//  image4
+
 
 const backgroundImages = {
   Screen1: Img1,
