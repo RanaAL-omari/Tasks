@@ -16,7 +16,7 @@ const Task35 = () => {
           const currentTime = new Date().getTime();
           const timeDifference = currentTime - new Date(parsedData.timestamp).getTime();
 
-          if (timeDifference < 60000) { // أقل من دقيقة
+          if (timeDifference < 60000) {
             setName(parsedData.name);
             setAge(parsedData.age);
             setCountry(parsedData.country);

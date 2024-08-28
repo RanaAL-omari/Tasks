@@ -55,7 +55,3 @@ const styles = StyleSheet.create({
 });
 
 export default Task27;
-<<<<<<< HEAD
-=======
-
->>>>>>> b80db94bc5e6b794672b5e3b251aa3173a1f85fa
